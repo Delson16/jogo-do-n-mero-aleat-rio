@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do número</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Número aletaório</h1>
+    </header>
+
+    <main>
+
+        <div class="placar div">
+            <h2>O numero misterioso é...</h2>
+            <div id="pontuacao"></div>
+        </div>
+
+        <div id="content" class="div">
+            <h2>Tente adivinhar um número entre 0 a 100</h2>
+            <input type="number" name="n" id="n" placeholder="Digite um número">
+            <menu>
+                <input type="button" value="reset" onclick="setDificuldade(4)">
+                <input type="button" value="verificar" onclick="comparacao()">
+            </menu>
+            <div id="msg"></div>
+        </div>
+        <div class="seletorDificuldade div">
+            <h2>Selecione a sua dificuldade</h2>
+
+            <div class="dificuldades">
+                <input type="button" value="Fácil" onclick="setDificuldade(1)" id="facil">
+                <input type="button" value="Médio" onclick="setDificuldade(2)" id="medio">
+                <input type="button" value="Difícil" onclick="setDificuldade(3)" id="dificil">
+            </div>
+
+            <div class="vidas">
+                <div id="vida-facil" class="coracao">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                </div>
+                <div id="vida-media" class="coracao">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                </div>
+                <div id="vida-dificil" class="coracao">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                    <img src="img/vida.png" alt="coração">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy <b><i>Delson Pilar</i></b> | Março de 2024</p> <br>
+        <ul type="none">
+            <li>
+                <a href="https://github.com/Delson16">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/delson-dubal-pilar-2132a32b3/">Linkedin</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
