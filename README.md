@@ -10,4 +10,4 @@
 
 ## Capturas de tela
 
-<img src="img-readme/tela.png"  align="center">
+<img src="imgReadme/tela.png"  align="center">
