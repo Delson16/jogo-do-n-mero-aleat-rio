@@ -45,7 +45,7 @@ h2 {
 }
 
 .placar {
-    width: 420px;
+    width: 370px;
     height: 50vh;
     border-radius: 5px;
     padding: 40px;
@@ -61,7 +61,7 @@ h2 {
 }
 
 #content {
-    width: 420px;
+    width: 370px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -143,8 +143,8 @@ input[value="verificar"] {
     padding: 20px 0px;
 }
 
-.seletorDificuldade {
-    width: 420px;
+.seletorDificuldade {    
+    width: 370px;
     height: 50vh;
     border-radius: 5px;
     padding: 40px;
